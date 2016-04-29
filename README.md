@@ -1,7 +1,7 @@
 # HomeAwayExercise1
 The page classes are created under the package "com.homeaway.pages" The test cases classes are created under the package "com.homeaway.testcases"
 
-API Test Cases: 2 Tests in One Test Class. API related tasks are performed using the FuelStationUtil.class
+API Test Cases: 2 Tests in One Test Class. API related tasks are performed using the FuelStationUtil.class. Station ID is stored in the dataFile.txt under the project path itself
 
 Testrunner class: Provided a testrunner class to run all the 3 tests through commandline
 
