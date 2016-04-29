@@ -39,6 +39,10 @@ public class APIValidationFuelStation {
 		this.fsu = new FuelStationsUtils ("https://api.data.gov/nrel/alt-fuel-stations/v1/nearest.json?api_key=UG07byblSe6XM516eJjJJROOGW1pMbXGLPZSfbne&location=");
 	}
 	
+	/**
+	 * Test to validate Fuel Station ID
+	 * @throws JSONException
+	 */
 	@Test
 	public void validateFuelStationId() throws JSONException {
 		
@@ -52,6 +56,7 @@ public class APIValidationFuelStation {
 		
 		//Find Station Name Exists in Array of Fuel Stations and if found get Station ID
 		this.station_ID = fsu.getStationID(fuelStations, "HYATT AUSTIN");
+		
 		// Validate the correct Station ID is returned
 		Assert.assertEquals(station_ID, String.valueOf(62029));
 		
@@ -59,6 +64,10 @@ public class APIValidationFuelStation {
 		fsu.storeItem(station_ID);
 		
 	}
+	
+	/**
+	 * Test to validate Station Address
+	 */
 	
 	@Test
 	public void validateStationAddress(){
